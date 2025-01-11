@@ -1,0 +1,32 @@
+@media only screen and (min-width: 34rem) {
+    
+        .parent {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 10px;
+        
+        }
+        
+        .parent ::selection {
+            box-shadow: 1px 1px 10px;
+        }
+        
+        }/*end media query*/
+        
+        /* Larger Views ******************************/
+        @media (min-width: 640px) {
+            nav ul {
+                display: flex;
+            }
+            nav ul li {
+                flex: 1 1 100%;
+            }
+        }
+        
+        
+        @media only screen and (min-width: 38rem) {
+        .hero span {
+            font-size: 2rem;
+        }
+        
+        } /* end media query */
