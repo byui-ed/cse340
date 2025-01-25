@@ -1,0 +1,1 @@
+const baseController = require("./controllers/baseController")
