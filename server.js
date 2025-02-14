@@ -1,3 +1,5 @@
+const utilities = require("../utilities/")
+
 /* ***********************
  * Middleware
  * ************************/
@@ -22,11 +24,15 @@ app.use(function(req, res, next){
   next()
 })
 
+app.use(utilities.checkJWTToken)
+
+app.use(cookieParser())
+
 
 // Account routes
 app.use("/account", require("./routes/accountRoute"))
 
-
+const cookieParser = require("cookie-parser")
 const bodyParser = require("body-parser")
 
 

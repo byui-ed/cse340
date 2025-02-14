@@ -1,1 +1,1 @@
-<form action="/account/register" method="post"></form>
+<form id="loginForm" action="/account/login" method="post"></form>
